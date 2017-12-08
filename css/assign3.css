@@ -439,3 +439,16 @@ p {
     text-transform: uppercase;
 }
 /* section 5 end*/
+/* Footer */
+.image-container-footer {
+    display: flex;
+    flex: 1;
+}
+.row-footer {
+    display: flex;
+    padding: 5px;
+    padding-top: 30px;
+    /* flex-wrap: wrap; */
+    /* margin-right: -15px;
+    margin-left: -15px; */
+}
