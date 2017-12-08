@@ -98,14 +98,7 @@ p {
 .text-center {
     text-align: center;
 }
-.text-center-black{
-    float: left;
-    padding-left: 295px;
-}
-.text-center-blacks{
-    float: left;
-    padding-left: 320px;
-}
+
 .banner-content .top {
     font-size: 12px;
     margin-top: 190px;
@@ -113,19 +106,7 @@ p {
 .text-white {
     color: #fff;
 }
-.text-black-fontsize{
-font-size: 18px;
-}
-.text-black-fontsizes{
-font-size: 10px;
-}
-.sliderimg{
-    background-position: center;
-}
-.text-black {
-    color: #000;
 
-}
 
 .text-uppercase {
     text-transform: uppercase;
@@ -357,3 +338,39 @@ a, area, button, [role="button"], input, label, select, summary, textarea {
     touch-action: manipulation;
 }
 /* section 3 Styles end*/
+/* section 4*/
+.text-black-fontsize{
+font-size: 18px;
+}
+.text-black-fontsizes{
+font-size: 10px;
+}
+.sliderimg{
+    background-position: center;
+    padding-left: 150px;
+    padding-top: 45px;
+}
+.text-black-fontsizes{
+font-size: 10px;
+}
+.text-black-fontsizess{
+font-size: 10px;
+}
+.text-black {
+    color: #000;
+
+}
+.text-center-black{
+    float: left;
+    padding-left: 321px;
+}
+.text-center-blacks{
+    float: right;
+    padding-right: 288px;
+    padding-top: 30px;
+}
+.text-center-blackss{
+    float: left;
+    padding-left: 320px;
+}
+/* section 4 end/
