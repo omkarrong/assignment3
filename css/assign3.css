@@ -13,11 +13,17 @@
     width: 75%;
         background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
      line-height: 1.5rem;
+     padding-bottom: 80px;
      
+}
+
+.section-one {
+    padding: 120px 0;
 }
 
 .row {
     display: flex;
+    padding: 5px;
     /* flex-wrap: wrap; */
     /* margin-right: -15px;
     margin-left: -15px; */
@@ -107,7 +113,6 @@ p {
 }
 
 .banner-content {
-    padding: 16px;
     text-align: center;
     width: 100%;
 }
@@ -346,7 +351,9 @@ a, a:focus, a:hover {
     text-decoration: none;
     outline: 0;
 }
-
+.our-service{
+    padding-top: 20px;
+}
 a, area, button, [role="button"], input, label, select, summary, textarea {
     touch-action: manipulation;
 }
@@ -354,9 +361,15 @@ a, area, button, [role="button"], input, label, select, summary, textarea {
 /* section 4*/
 .text-black-fontsize{
 font-size: 18px;
+padding-top: 5px;
 }
 .text-black-fontsizes{
-font-size: 10px;
+font-size: 18px;
+
+}
+.re-font{
+    font-size: 10px;
+
 }
 .sliderimg{
     background-position: center;
@@ -364,13 +377,16 @@ font-size: 10px;
     padding-top: 45px;
 }
 .text-black-fontsizes{
-font-size: 10px;
+font-size: 16px;
 }
 .text-black-fontsizess{
 font-size: 10px;
 }
 .text-black {
     color: #000;
+}
+.our-amazing{
+    padding-top: 0px;
 }
 .text-center-black{
     float: left;
@@ -402,9 +418,19 @@ font-size: 10px;
     position: relative;
     z-index: 2;
 }
-
+.middle-contener{
+        width: 47%;
+        margin-top: 20px;
+        text-align: center;
+        background: #fff;
+        padding: 66px 16px;
+}
 .story-title{
     padding-top: 150px;
+}
+p {
+    margin-top: 16px;
+    margin-bottom: -1rem;
 }
 .text-whites{
     color: #fff;
