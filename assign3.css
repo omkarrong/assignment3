@@ -64,6 +64,8 @@ span {
 h6, .h6 {
     font-size: 14px;
     color: #222222;
+    margin-bottom: 10px;
+    margin-top: 55px;
 }
 .single-feature .desc {
     width: 72%;
@@ -197,7 +199,22 @@ body:after {
 .col-md-4 {
     padding: 16px 16px;
 }
-
+.single-feature .icon {
+    text-align: center;
+    height: 60px;
+    width: 55px;
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
+    position: relative;
+}
+.single-feature .icon {
+    text-align: center;
+    height: 60px;
+    width: 55px;
+    border-radius: 3px;
+    border: 1px solid #eeeeee;
+    position: relative;
+}
 .child-container {
     display: flex;
     justify-content: space-between;
@@ -206,6 +223,9 @@ body:after {
 .image-container {
     display: flex;
     flex: 2;  
+}
+.icon:hover{
+        background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
 }
 
 .icon {
@@ -217,7 +237,7 @@ body:after {
 
 .text-container {
     display: flex;
-    flex: 6;  
+    flex: 4;  
     flex-direction: column;
 }
 
@@ -231,3 +251,87 @@ body:after {
     font-weight: 300;
 }
 /* Section 2 Styles END */
+/* Section 3 */
+.text-font-size{
+font-size: 18px;
+}
+.text-font-sizes{
+font-size: 12px;
+}
+.image-section{
+    padding: 0px;
+}
+.col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-sm-6{
+    position: relative;
+    width : 100%;
+    min-height : 1px;
+    padding-right: 1px;
+    padding-left: 2px;
+}
+.single-service {
+    margin-top: 40px;
+}
+.col-lg-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+.container {
+    max-width: 960px;
+}
+.single-service:hover .overlay-content {
+    opacity: 1;
+    visibility: visible;
+}
+.single-service .image-section {
+    height: 6rem;
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.primary-btn.hover {
+    color: #fff;
+    border: 1px solid transparent;
+}
+.primary-btn {
+    line-height: 40px;
+    padding: 0 30px;
+    border-radius: 20px;
+    background: transparent;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.primary-btn span {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.single-service .desc {
+    margin-top: 30px;
+}
+a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+a, area, button, [role="button"], input, label, select, summary, textarea {
+    touch-action: manipulation;
+}
+/* section 3 Styles end*/
