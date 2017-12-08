@@ -146,7 +146,7 @@ h1 {
 }
 body {
 
-    background-image: url("backgroundimg.jpg");
+    background-image: url("images/backgroundimg.jpg");
 }
 body:before {
     background-attachment: fixed;
