@@ -98,6 +98,14 @@ p {
 .text-center {
     text-align: center;
 }
+.text-center-black{
+    float: left;
+    padding-left: 295px;
+}
+.text-center-blacks{
+    float: left;
+    padding-left: 320px;
+}
 .banner-content .top {
     font-size: 12px;
     margin-top: 190px;
@@ -105,9 +113,20 @@ p {
 .text-white {
     color: #fff;
 }
+.text-black-fontsize{
+font-size: 18px;
+}
+.text-black-fontsizes{
+font-size: 10px;
+}
+.sliderimg{
+    background-position: center;
+}
 .text-black {
     color: #000;
+
 }
+
 .text-uppercase {
     text-transform: uppercase;
 }
@@ -148,8 +167,8 @@ h1 {
     content: "\e87a";
 }
 body {
-
-    background-image: url("images/backgroundimg.jpg");
+  background-image: url("../images/backgroundimg.jpg");
+   /* background-image: url(".../images/backgroundimg.jpg");*/
 }
 body:before {
     background-attachment: fixed;
