@@ -105,6 +105,9 @@ p {
 .text-white {
     color: #fff;
 }
+.text-black {
+    color: #000;
+}
 .text-uppercase {
     text-transform: uppercase;
 }
