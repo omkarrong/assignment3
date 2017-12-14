@@ -5,7 +5,33 @@
 	<title> Assignment 3</title>
 	<link rel="stylesheet" type="text/css" href="css/assign3.css">
 	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-</head>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+		var i;
+		var x = document.getElementsByClassName("i3");
+		if (n > x.length) {
+			slideIndex = 1
+		}
+		if (n < 1) {
+			slideIndex = x.length
+		};
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		x[slideIndex - 1].style.display = "block";
+	}
+</script>
+
+ </head>
 
 <body>
 
@@ -34,7 +60,7 @@
 			<div>
 				<h1 class="text-white text-uppercase">We grow money, Guaranteed</h1>
 			</div>
-			<a href="#" class="primary-btn d-inline-flex align-items-center">
+			<a href="#" class="primary-btn d-inline-flex align-items-center" style="top:550px;">
 				<span class="mr-10">Get Started
 				</span>
 				<span class="inr inr-arrow-right">
@@ -94,9 +120,9 @@
 					<div class="single-service">
 
 						<div class="image-section">
-							<img src="images/s1.jpg" style="height:125px; width:160px;">
+							<img src="images/s1.jpg" class="section-images">
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
-								<a href="#" class="primary-btn hover d-inline-flex align-item-center">
+								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
 									<span class="inr inr-arrow-right">
 
@@ -116,9 +142,9 @@
 					<div class="single-service">
 
 						<div class="image-section">
-							<img src="images/s2.jpg" style="height:125px; width:160px;">
+							<img src="images/s2.jpg" class="section-images">
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
-								<a href="#" class="primary-btn hover d-inline-flex align-item-center">
+								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
 									<span class="inr inr-arrow-right">
 
@@ -137,9 +163,9 @@
 					<div class="single-service">
 
 						<div class="image-section">
-							<img src="images/s3.jpg" style="height:125px; width:160px;">
+							<img src="images/s3.jpg" class="section-images">
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
-								<a href="#" class="primary-btn hover d-inline-flex align-item-center">
+								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
 									<span class="inr inr-arrow-right">
 
@@ -158,9 +184,9 @@
 					<div class="single-service">
 
 						<div class="image-section">
-							<img src="images/s4.jpg" style="height:125px; width:160px;">
+							<img src="images/s4.jpg" class="section-images">
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
-								<a href="#" class="primary-btn hover d-inline-flex align-item-center">
+								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
 									<span class="inr inr-arrow-right">
 
@@ -184,9 +210,9 @@
 					<div class="single-service">
 
 						<div class="image-section">
-							<img src="images/s5.jpg" style="height:125px; width:160px;">
+							<img src="images/s5.jpg" class="section-images">
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
-								<a href="#" class="primary-btn hover d-inline-flex align-item-center">
+								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
 									<span class="inr inr-arrow-right">
 
@@ -206,9 +232,9 @@
 					<div class="single-service">
 
 						<div class="image-section">
-							<img src="images/s6.jpg" style="height:125px; width:160px;">
+							<img src="images/s6.jpg" class="section-images">
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
-								<a href="#" class="primary-btn hover d-inline-flex align-item-center">
+								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
 									<span class="inr inr-arrow-right">
 
@@ -218,7 +244,7 @@
 						</div>
 						<div class="desc">
 							<h6 class="text-uppercase text-white">BEACH HOTEL</h6>
-							<p class="text-white"> Shure’s Music Phone Adapter (MPA) is our favorite iPhone solution, since it lets you use the headphones</p>
+							<p class="text-white"> Shure’s Music Phone Adapter is our favorite iPhone solution, since it lets you use the headphones</p>
 						</div>
 					</div>
 				</div>
@@ -227,9 +253,9 @@
 					<div class="single-service">
 
 						<div class="image-section">
-							<img src="images/s7.jpg" style="height:125px; width:160px;">
+							<img src="images/s7.jpg" class="section-images">
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
-								<a href="#" class="primary-btn hover d-inline-flex align-item-center">
+								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
 									<span class="inr inr-arrow-right">
 
@@ -248,9 +274,9 @@
 					<div class="single-service">
 
 						<div class="image-section">
-							<img src="images/s8.jpg" style="height:125px; width:160px;">
+							<img src="images/s8.jpg" class="section-images">
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
-								<a href="#" class="primary-btn hover d-inline-flex align-item-center">
+								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
 									<span class="inr inr-arrow-right">
 
@@ -276,14 +302,24 @@
 					<p class="re-font">
 						RE-IMAGINING THE WAY
 					</p>
-					<img src="images/w1.jpg" class="sliderimg">
-				</div>
-				<div class="text-black text-center-black w-100">
-					<p>
+
+<div class="section5">
+	<div class="w3-center w3-display-bottommiddle" style="width:100%">
+		<div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
+		<div class="w3-right" onclick="plusDivs(1)">&#10095;</div>
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		<img class="i3" src="/images/w1.jpg" />
+		<img class="i3" src="/images/w1.jpg" />
+		<img class="i3" src="/images/w1.jpg" />
+
+	</div>
+</div>
+					<p class="vector">
 						 VECTOR ILLUSTRATION
 					</p>
 					<p>
-						<div class="text-blacks text-center-blackss ">LCD screens are uniquily modern in style, and liquid cryasles that make them work have allow humanity to</div>
+<div class="text-blacks text-center-blackss .section5h22">LCD screens are uniquily modern in style, and liquid cryasles that make them work have allow humanity to</div>
 					</p>
 				</div>
 				<div>
@@ -319,13 +355,12 @@
 						
 					</div>
 					<div class="middle-contener">
-						FROM THE PART OF BEGINING
-						<P>
+						<p class="heading1">FROM THE PART OF BEGINING</p>
+						<P class="para">
  Usage of the Internet is becoming more common due to rapid advancement of technology and the power of globalization. Societies
 are becoming more inter-connected. Thoughts from different
 						
-						<a href="#" class="primary-btn-mid d-inline-flexs align-items-centers">
-							<span class="mr-10">Get Started
+						<div class="innerpill-mid"> Get Started</div>
 							</span>
 							<span class="inr inr-arrow-right">
 						
@@ -358,6 +393,23 @@ are becoming more inter-connected. Thoughts from different
 	
 	</div>
 	</div>-->
+<div class="section7">
+
+
+	<div class="section7para">
+		<h1 class="section7h1"> Subscribe for our Newsletter</h1>
+		<p class="section7p"> RE-IMAGINING THE WAY</p>
+
+	</div>
+
+	<div class="outerpill">Email address
+		<div class="innerpill"> Get Started
+			<div class="rightarrow">
+				<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+	</div>
 </div>
 
 
@@ -394,7 +446,25 @@ are becoming more inter-connected. Thoughts from different
 		</p>
 	</div>
 </div>
-	</footer>
+</footer>
+<div class="footerwrapper">
+<div class="footer-copy">
+<div class="footer-logo">
+	<img src="images/logoofdinomuz.png">
+</div>
+					  <p class="footerpara">Copyright © 2017 | All rights reserved to Dinomuz inc.This template is made with       
+					  <div class="heart1"> <i class="fa fa-heart-o" aria-hidden="true"><span class="by">by</span><label class="heart"> Colorlib</label></i> 
+					  </div>
+                      </p>
+					  
+					  
+					  
+					  <div class="be"><i class="fa fa-behance" aria-hidden="true"></i> </div>
+					  <div class="world"><i class="fa fa-dribbble" aria-hidden="true"></i> </div>
+					   <div class="twitter"><i class="fa fa-twitter-square" aria-hidden="true"></i> </div>
+					  <div class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i> </div>
+	</div>
+	</div>
 </body>
 
 </html>
