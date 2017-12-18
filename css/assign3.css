@@ -14,23 +14,30 @@
         background-image: -webkit-linear-gradient(0deg, #e66587 0%, #f09458 100%);
      line-height: 1.5rem;
      padding-bottom: 80px;
+     position: relative;
      
 }
 /* header section start*/
 .logo{
 float: left;
-margin-top: 30px;
-margin-left: -155px;
+/* margin-top: 30px; */
+/* margin-left: -155px; */
+position: absolute;
+left: 20px;
+top: 20px;
 }
 .bar {
     height: 20px;
     width: 10%;
     float: right;
-    margin-top: 30px;
-    margin-right: -155px;
+    /* margin-top: 30px; */
+    /* margin-right: -155px; */
     font-size: 30px;
     color: #fff;
     background: transparent;
+    position: absolute;
+    right: -40px;
+    top: 20px;
 }
 .section-one {
     padding: 120px 0;
@@ -324,7 +331,8 @@ font-size: 12px;
 }
 
 a.trial-button {
-    background-color: orange;
+    border: 1px solid #e66587;
+    background: linear-gradient(to right, #e66587, #f09458);
     height: 50px;
     display: flex;
     align-items: center;
@@ -358,7 +366,7 @@ a.trial-button {
     width: 90%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(0, 0, 0, 0.616);
+    background-color: rgba(255, 255, 255, 0.84);
 }
 
 .section-images {
@@ -436,6 +444,9 @@ a, a:focus, a:hover {
 }
 .our-service{
     padding-top: 20px;
+        font-size: 24px;
+        font-family: "Poppins",
+        sans-serif;
 }
 a, area, button, [role="button"], input, label, select, summary, textarea {
     touch-action: manipulation;
@@ -541,6 +552,7 @@ font-size: 10px;
 }
 
 .section5p {
+
     font-size: 14px;
     font-family: "Poppins", sans-serif;
     margin-top: 5px;
@@ -772,12 +784,12 @@ footer-copy {
 }
 .footerwrapper{
 	width: 80%;
-	height: 50px;
+	height: 70px;
 	
 	background: rgba(0, 0, 0, 0.25);
 
     margin: auto;
-    margin-top: 28px;
+    margin-top: 60px;
     padding-left: 10px;
     margin-left: 130px;
 
@@ -892,4 +904,135 @@ footer-copy {
          padding-right: 15px;
          padding-left: 15px;
      
+}
+
+
+
+/*image slider */
+/* Reset ----------- */
+
+ul {
+    list-style-type: none;
+}
+img {
+    border: 0;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.pointer {
+    cursor: pointer;
+}
+.wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+.pad {
+    padding: 1em;
+}
+
+/* Slider ----------- */
+#content {
+    margin: 5em 0;
+}
+.slider-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slider-wrap img {
+    max-height: 200px;
+}
+.slider {
+    width: 9999em;
+    position: relative;
+    left: 0;
+}
+.slide {
+    position: relative;
+    width: 60em;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    background: #eee;
+    border-right: 3px solid #aaa;
+    border-left: 3px solid #aaa;
+    float: left;
+}
+.slider-wrap .arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 3;
+    background: rgba(0,0,0,.3);
+    border-radius: 50px;
+    padding: .5em 1em;
+    color: #fff;
+    margin: 1em;
+    -webkit-transition: all .3s ease;
+    display: none;
+}
+.arrow:hover {
+    background: rgba(0,0,0,.5);
+    -webkit-transition: all .3s ease;
+}
+.a-right {
+    right: 0;
+}
+.slider-wrap > ul {
+    position: absolute;
+    z-index: 9999;
+    bottom: 5%;
+    left: 50%;
+}
+.slider-wrap > ul li {
+    float: left;
+    width: 15px;
+    height: 15px;
+    padding: 1px;
+    margin: 0 .5em;
+    border: 2px solid rgba(0,0,0,.3);
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+}
+.slider-wrap > ul li:hover {
+    -webkit-transition: all .3s ease;
+    border-color: rgba(0,0,0,.5);
+}
+.circle {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    border-radius: 50px;
+    -webkit-transition: all .3s ease;
+}
+.circle:hover {
+    -webkit-transition: all .3s ease;
+    background: rgba(0,0,0,.5);
+}
+
+/* Smartphones ----------- */
+@media only screen and (max-width:30em) {
+    .wrapper {
+        width: 95%;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 62em) {
+    .wrapper {
+        width: 100%;
+    }
 }

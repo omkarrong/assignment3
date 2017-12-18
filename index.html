@@ -8,27 +8,67 @@
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 <script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
-
-	function plusDivs(n) {
-		showDivs(slideIndex += n);
-	}
-
-	function showDivs(n) {
-		var i;
-		var x = document.getElementsByClassName("i3");
-		if (n > x.length) {
-			slideIndex = 1
-		}
-		if (n < 1) {
-			slideIndex = x.length
-		};
-		for (i = 0; i < x.length; i++) {
-			x[i].style.display = "none";
-		}
-		x[slideIndex - 1].style.display = "block";
-	}
+var tabindex=1;
+$(document).ready(function(){
+  var windowWidthInit = $(".slider-wrap").width(),
+      slides = $(".slider .slide").length,
+      circle="",
+      move="";
+  $(".slider-wrap").hover(function(){
+    if (windowWidthInit>700) {
+      $(".arrow").fadeToggle();
+    }
+  });
+  $(".slide").css({"width": windowWidthInit});
+  for (var i=1;i<slides+1;i++) {
+    if (i===tabindex) {
+      circle = "<li><span class='circle'></circle></li>";
+    } else {
+      circle = "<li></li>";
+    }
+    $(circle).appendTo(".slider-wrap ul").bind("click", function(){
+      var oldtabindex = tabindex;
+      var windowWidth = $(".slider-wrap").width();
+      if ($(this).index()+1!=tabindex) {
+        tabindex=$(this).index()+1;
+        moveindex=tabindex-oldtabindex;
+        move="-="+windowWidth*(moveindex);
+        $(".slider").animate({left: move});
+      }
+      $(".circle").fadeOut().remove();
+      $("<span class='circle'></span>").appendTo(this).hide().fadeIn("fast");
+    });
+  }
+  $(".arrow").click(function(){
+    var windowWidth = $(".slider-wrap").width();
+    if ($(this).attr("id")==="right") {
+      if (tabindex===slides) {
+        tabindex=1
+          move="+="+windowWidth*(slides-1);
+      } else {
+        tabindex=tabindex+1;
+        move="-="+windowWidth;
+      }
+    } else {
+      if (tabindex===1){
+        tabindex=slides;
+        move="-="+windowWidth*(slides-1);
+      } else {
+        tabindex=tabindex-1;
+        move="+="+windowWidth;
+      }
+    }
+    $(".slider").animate({left: move});
+    $(".circle").fadeOut().remove();
+    $("<span class='circle'></span>").appendTo(".slider-wrap ul li:nth-child("+tabindex+")").hide().fadeIn();
+  });
+				var pushLeft = ($(".slider-wrap ul").width()/2);
+				$(".slider-wrap ul").css({"margin-left": "-"+pushLeft+"px"});
+			});
+			$(window).resize(function(){
+				var windowWidth = $(".slider-wrap").width();
+				$(".slide").css({"width": windowWidth});
+			});
 </script>
 
  </head>
@@ -124,9 +164,7 @@
 							<div class="overlay overlay-content d-flex justify-content-center align-item-center">
 								<a href="#" class="trial-button">
 									<span class="mr-10">Get Started</span>
-									<span class="inr inr-arrow-right">
-
-									</span>
+									
 								</a>
 							</div>
 						</div>
@@ -302,7 +340,7 @@
 					<p class="re-font">
 						RE-IMAGINING THE WAY
 					</p>
-
+<!-- 
 <div class="section5">
 	<div class="w3-center w3-display-bottommiddle" style="width:100%">
 		<div class="w3-left" onclick="plusDivs(-1)">&#10094;</div>
@@ -314,7 +352,39 @@
 		<img class="i3" src="/images/w1.jpg" />
 
 	</div>
-</div>
+</div> -->
+				<div id="content">
+			<div class="wrapper">
+				<div class="slider-wrap">
+					<div id="left" class="arrow pointer">L</div>
+					<div id="right" class="arrow pointer a-right">R</div>
+					<ul class="group"></ul>
+					<div class="slider group">
+						<div class="slide">
+							<div class="pad">
+								<img src="images/s4.jpg">
+							</div>
+						</div>
+						<div class="slide">
+								<img src="images/s2.jpg"/>
+						</div>
+						<div class="slide">
+							<div class="pad">
+								<img src="images/s5.jpg"/>
+							</div>
+						</div>
+						<div class="slide">
+							<img src="images/s4.jpg">
+							
+						</div>
+						<div class="slide">
+								<img src="images/w1.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 					<p class="vector">
 						 VECTOR ILLUSTRATION
 					</p>
